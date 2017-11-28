@@ -1,0 +1,11 @@
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.exe.config
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.exe
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.pdb
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Models.dll
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Repository.dll
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Models.pdb
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Repository.pdb
+C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.csprojResolveAssemblyReference.cache
+C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.csproj.CoreCompileInputs.cache
+C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.exe
+C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.pdb

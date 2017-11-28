@@ -1,0 +1,5 @@
+C:\Projects\GIT\University\MA.University\MA.University.Models\bin\Debug\MA.University.Models.dll
+C:\Projects\GIT\University\MA.University\MA.University.Models\bin\Debug\MA.University.Models.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Models\obj\Debug\MA.University.Models.csproj.CoreCompileInputs.cache
+C:\Projects\GIT\University\MA.University\MA.University.Models\obj\Debug\MA.University.Models.dll
+C:\Projects\GIT\University\MA.University\MA.University.Models\obj\Debug\MA.University.Models.pdb

@@ -1,0 +1,8 @@
+C:\Projects\GIT\University\MA.University\MA.University.Repository\bin\Debug\MA.University.Repository.dll
+C:\Projects\GIT\University\MA.University\MA.University.Repository\bin\Debug\MA.University.Repository.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Repository\bin\Debug\MA.University.Models.dll
+C:\Projects\GIT\University\MA.University\MA.University.Repository\bin\Debug\MA.University.Models.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Repository\obj\Debug\MA.University.Repository.csprojResolveAssemblyReference.cache
+C:\Projects\GIT\University\MA.University\MA.University.Repository\obj\Debug\MA.University.Repository.csproj.CoreCompileInputs.cache
+C:\Projects\GIT\University\MA.University\MA.University.Repository\obj\Debug\MA.University.Repository.dll
+C:\Projects\GIT\University\MA.University\MA.University.Repository\obj\Debug\MA.University.Repository.pdb
