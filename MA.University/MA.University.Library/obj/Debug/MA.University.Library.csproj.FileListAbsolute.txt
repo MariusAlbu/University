@@ -3,3 +3,4 @@ C:\Projects\GIT\University\MA.University\MA.University.Library\bin\Debug\MA.Univ
 C:\Projects\GIT\University\MA.University\MA.University.Library\obj\Debug\MA.University.Library.csproj.CoreCompileInputs.cache
 C:\Projects\GIT\University\MA.University\MA.University.Library\obj\Debug\MA.University.Library.dll
 C:\Projects\GIT\University\MA.University\MA.University.Library\obj\Debug\MA.University.Library.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Library\obj\Debug\MA.University.Library.csprojResolveAssemblyReference.cache

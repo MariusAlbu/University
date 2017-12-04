@@ -1,5 +1,7 @@
-﻿using MA.University.Models;
+﻿using MA.University.Library;
+using MA.University.Models;
 using MA.University.Repository;
+using MA.University.Repository.Core;
 using System;
 using System.Collections.Generic;
 
@@ -9,16 +11,21 @@ namespace MA.University
     {
         static void Main(string[] args)
         {
-            ShowStudents();
-            ShowCourses();
+            using (RepositoryContext repositoryContext = new RepositoryContext())
+            {
+                ShowStudents(repositoryContext);
+                ShowCourses(repositoryContext);
+            }
+
+            //DelegateExample delegateExample = new DelegateExample();
+            //delegateExample.DoStuff();
 
             Console.ReadKey();
         }
 
-        private static void ShowStudents()
+        private static void ShowStudents(RepositoryContext repositoryContext)
         {
-            StudentRepository studentRepository = new StudentRepository();
-            List<Student> students = studentRepository.ReadAll();
+            List<Student> students = repositoryContext.StudentRepository.ReadAll();
 
             Console.WriteLine("Students:");
             foreach (Student student in students)
@@ -27,10 +34,9 @@ namespace MA.University
             }
         }
 
-        private static void ShowCourses()
+        private static void ShowCourses(RepositoryContext repositoryContext)
         {
-            CourseRepository courseRepository = new CourseRepository();
-            List<Course> courses = courseRepository.ReadAll();
+            List<Course> courses = repositoryContext.CourseRepository.ReadAll();
 
             Console.WriteLine("Courses:");
 

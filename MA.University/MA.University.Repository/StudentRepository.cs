@@ -1,62 +1,24 @@
 ﻿using MA.University.Models;
+using MA.University.Repository.Core;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace MA.University.Repository
 {
-    public class StudentRepository
+    public class StudentRepository: BaseRepository<Student>
     {
         #region Methods
         public List<Student> ReadAll()
         {
-            List<Student> students = new List<Student>();
-            string connectionString = "Server=MARIUS2;Database=UniversityDB;Trusted_Connection=True;";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    using (SqlCommand command = new SqlCommand())
-                    {
-                        command.Connection = connection;
-                        command.CommandText = "dbo.Students_ReadAll";
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-
-                        connection.Open();
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                Student student = new Student();
-                                student.ID = reader.GetGuid(reader.GetOrdinal("StudentID"));
-                                student.FirstName = reader.GetString(reader.GetOrdinal("FirstName"));
-                                student.LastName = reader.GetString(reader.GetOrdinal("LastName"));
-                                student.Address = reader.GetString(reader.GetOrdinal("Address"));
-                                student.City = reader.GetString(reader.GetOrdinal("City"));
-                                student.Country = reader.GetString(reader.GetOrdinal("Country"));
-                                student.PhoneNumber = reader.GetString(reader.GetOrdinal("PhoneNumber"));
-                                student.EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress"));
-                                student.BirthDay = reader.GetDateTime(reader.GetOrdinal("BirthDay"));
-                                students.Add(student);
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("There was an error: {0}", ex.ToString());
-                }
-            }
-
-            return students;
+            return DatabaseManager.ReadAll<Student>(_connectionString, "dbo.Students_ReadAll",
+                GetModelFromReader);
+            //return ReadAll("dbo.Students_ReadAll");
         }
 
         public void Insert(Student student)
         {
-            string connectionString = "Server=MARIUS2;Database=UniversityDB;Trusted_Connection=True;";
-
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(_connectionString);
             try
             {
 
@@ -90,6 +52,22 @@ namespace MA.University.Repository
             {
                 connection.Close();
             }
+        }
+
+        protected override Student GetModelFromReader(SqlDataReader reader)
+        {
+            Student student = new Student();
+            student.ID = reader.GetGuid(reader.GetOrdinal("StudentID"));
+            student.FirstName = reader.GetString(reader.GetOrdinal("FirstName"));
+            student.LastName = reader.GetString(reader.GetOrdinal("LastName"));
+            student.Address = reader.GetString(reader.GetOrdinal("Address"));
+            student.City = reader.GetString(reader.GetOrdinal("City"));
+            student.Country = reader.GetString(reader.GetOrdinal("Country"));
+            student.PhoneNumber = reader.GetString(reader.GetOrdinal("PhoneNumber"));
+            student.EmailAddress = reader.GetString(reader.GetOrdinal("EmailAddress"));
+            student.BirthDay = reader.GetDateTime(reader.GetOrdinal("BirthDay"));
+
+            return student;
         }
         #endregion
     }

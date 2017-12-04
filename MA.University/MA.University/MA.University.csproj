@@ -48,6 +48,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MA.University.Library\MA.University.Library.csproj">
+      <Project>{cf4e8827-c3aa-4735-a33b-f7b24d1e8a4d}</Project>
+      <Name>MA.University.Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MA.University.Models\MA.University.Models.csproj">
       <Project>{273dd11d-730a-4328-8b69-3ebe0bf2a268}</Project>
       <Name>MA.University.Models</Name>

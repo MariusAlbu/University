@@ -9,3 +9,5 @@ C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.c
 C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.csproj.CoreCompileInputs.cache
 C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.exe
 C:\Projects\GIT\University\MA.University\MA.University\obj\Debug\MA.University.pdb
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Library.dll
+C:\Projects\GIT\University\MA.University\MA.University\bin\Debug\MA.University.Library.pdb
