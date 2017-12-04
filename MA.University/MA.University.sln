@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{89B46183-E54A-42DA-9655-F5D9C5CE3D70}"
 	ProjectSection(SolutionItems) = preProject
 		SQL\StructureCreation.sql = SQL\StructureCreation.sql
+		SQL\TestData.sql = SQL\TestData.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MA.University.Library", "MA.University.Library\MA.University.Library.csproj", "{CF4E8827-C3AA-4735-A33B-F7B24D1E8A4D}"
