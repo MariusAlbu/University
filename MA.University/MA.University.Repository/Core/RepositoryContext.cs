@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MA.University.RepositoryAbstraction;
+using MA.University.RepositoryAbstraction.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +8,47 @@ using System.Threading.Tasks;
 
 namespace MA.University.Repository.Core
 {
-    public class RepositoryContext: IDisposable
+    public class RepositoryContext: IRepositoryContext
     {
         #region Members
-        private StudentRepository _studentRepository;
-        private CourseRepository _courseRepository;
+        private static IRepositoryContext _instance;
+
+        private IStudentRepository _studentRepository;
+        private ICourseRepository _courseRepository;
+        #endregion
+
+        #region Constructor
+        public RepositoryContext()
+        {
+            _instance = this;
+        }
         #endregion
 
         #region Properties
-        public StudentRepository StudentRepository
+        internal static IRepositoryContext Current
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    throw new Exception("No RepositoryContext instance available!");
+                }
+                return _instance;
+            }
+        }
+
+        public IStudentRepository StudentRepository
         {
             get
             {
                 if (_studentRepository == null)
                     _studentRepository = new StudentRepository();
                 return _studentRepository;
+                //return _container.GetRepository<IStudentRepository>();
             }
         }
 
-        public CourseRepository CourseRepository
+        public ICourseRepository CourseRepository
         {
             get
             {
@@ -56,6 +80,11 @@ namespace MA.University.Repository.Core
                 {
                     //_connection.Dispose();
                     _studentRepository = null;
+                }
+
+                if (_instance != null)
+                {
+                    _instance = null;
                 }
             }
         }

@@ -53,6 +53,10 @@
       <Project>{273dd11d-730a-4328-8b69-3ebe0bf2a268}</Project>
       <Name>MA.University.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MA.University.RepositoryAbstraction\MA.University.RepositoryAbstraction.csproj">
+      <Project>{c637c1af-46d4-4e72-855b-fd750d2154c2}</Project>
+      <Name>MA.University.RepositoryAbstraction</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

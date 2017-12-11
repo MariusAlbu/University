@@ -1,0 +1,14 @@
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Business.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Business.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Models.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Repository.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Models.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.Repository.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Business\obj\Debug\MA.University.Business.csprojResolveAssemblyReference.cache
+C:\Projects\GIT\University\MA.University\MA.University.Business\obj\Debug\MA.University.Business.csproj.CoreCompileInputs.cache
+C:\Projects\GIT\University\MA.University\MA.University.Business\obj\Debug\MA.University.Business.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\obj\Debug\MA.University.Business.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.RepositoryAbstraction.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.RepositoryFactory.dll
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.RepositoryAbstraction.pdb
+C:\Projects\GIT\University\MA.University\MA.University.Business\bin\Debug\MA.University.RepositoryFactory.pdb

@@ -42,6 +42,19 @@
   <ItemGroup>
     <Compile Include="DelegateExample.cs" />
     <Compile Include="DisposePatternExample.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\BigComputer.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\ClientManager.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IBigBadInterface.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IClientProcessor.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IShape.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IUserProcessor.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\ShapeComputer.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\UserManager.cs" />
+    <Compile Include="OpenClosedPrinciple\Circle.cs" />
+    <Compile Include="OpenClosedPrinciple\IShape.cs" />
+    <Compile Include="OpenClosedPrinciple\Shaper.cs" />
+    <Compile Include="OpenClosedPrinciple\Square.cs" />
+    <Compile Include="OpenClosedPrinciple\TestOCP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

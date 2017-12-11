@@ -1,12 +1,13 @@
 ﻿using MA.University.Models;
 using MA.University.Repository.Core;
+using MA.University.RepositoryAbstraction;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace MA.University.Repository
 {
-    public class CourseRepository : BaseRepository<Course>
+    public class CourseRepository : BaseRepository<Course>, ICourseRepository
     {
         #region Methods
         public List<Course> ReadAll()

@@ -1,7 +1,5 @@
-﻿using MA.University.Library;
+﻿using MA.University.Business.Core;
 using MA.University.Models;
-using MA.University.Repository;
-using MA.University.Repository.Core;
 using System;
 using System.Collections.Generic;
 
@@ -11,11 +9,12 @@ namespace MA.University
     {
         static void Main(string[] args)
         {
-            using (RepositoryContext repositoryContext = new RepositoryContext())
+            using (BusinessContext businessContext = new BusinessContext())
             {
-                ShowStudents(repositoryContext);
-                ShowCourses(repositoryContext);
+                ShowStudents(businessContext);
+                ShowCourses(businessContext);
             }
+
 
             //DelegateExample delegateExample = new DelegateExample();
             //delegateExample.DoStuff();
@@ -23,9 +22,9 @@ namespace MA.University
             Console.ReadKey();
         }
 
-        private static void ShowStudents(RepositoryContext repositoryContext)
+        private static void ShowStudents(BusinessContext businessContext)
         {
-            List<Student> students = repositoryContext.StudentRepository.ReadAll();
+            List<Student> students = businessContext.StudentBusiness.ReadAll();
 
             Console.WriteLine("Students:");
             foreach (Student student in students)
@@ -34,9 +33,9 @@ namespace MA.University
             }
         }
 
-        private static void ShowCourses(RepositoryContext repositoryContext)
+        private static void ShowCourses(BusinessContext businessContext)
         {
-            List<Course> courses = repositoryContext.CourseRepository.ReadAll();
+            List<Course> courses = businessContext.CourseBusiness.ReadAll();
 
             Console.WriteLine("Courses:");
 

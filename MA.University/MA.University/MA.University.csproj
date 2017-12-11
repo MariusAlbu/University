@@ -48,6 +48,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MA.University.Business\MA.University.Business.csproj">
+      <Project>{f216b999-51ca-46d5-a389-65d6b30b4774}</Project>
+      <Name>MA.University.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MA.University.Library\MA.University.Library.csproj">
       <Project>{cf4e8827-c3aa-4735-a33b-f7b24d1e8a4d}</Project>
       <Name>MA.University.Library</Name>
@@ -55,10 +59,6 @@
     <ProjectReference Include="..\MA.University.Models\MA.University.Models.csproj">
       <Project>{273dd11d-730a-4328-8b69-3ebe0bf2a268}</Project>
       <Name>MA.University.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MA.University.Repository\MA.University.Repository.csproj">
-      <Project>{f877dddf-4d58-42c6-9f58-e5f9432ab8a5}</Project>
-      <Name>MA.University.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
