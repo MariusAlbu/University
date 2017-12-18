@@ -1,0 +1,9 @@
+C:\Projects\GIT\University\MA.University\MA.University.UI\bin\MA.University.UI.dll.config
+C:\Projects\GIT\University\MA.University\MA.University.UI\bin\MA.University.UI.dll
+C:\Projects\GIT\University\MA.University\MA.University.UI\bin\MA.University.UI.pdb
+C:\Projects\GIT\University\MA.University\MA.University.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\GIT\University\MA.University\MA.University.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\GIT\University\MA.University\MA.University.UI\obj\Debug\MA.University.UI.csprojResolveAssemblyReference.cache
+C:\Projects\GIT\University\MA.University\MA.University.UI\obj\Debug\MA.University.UI.csproj.CoreCompileInputs.cache
+C:\Projects\GIT\University\MA.University\MA.University.UI\obj\Debug\MA.University.UI.dll
+C:\Projects\GIT\University\MA.University\MA.University.UI\obj\Debug\MA.University.UI.pdb
