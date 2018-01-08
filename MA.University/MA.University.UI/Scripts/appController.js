@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    var menuController = new MenuController();
-    menuController.GenerateMenu();
-
+    var _serviceContext = new ServiceContext();
+    var _menuController = new MenuController(_serviceContext);
+    _menuController.GenerateMenu();
 });

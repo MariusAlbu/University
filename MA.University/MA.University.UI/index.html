@@ -12,6 +12,10 @@
     <script src="Scripts/External/jquery-3.2.1.min.js"></script>
     <script src="Scripts/External/bootstrap.bundle.js"></script>
     <!-- App Scripts -->
+    <script src="Scripts/Services/studentService.js"></script>
+    <script src="Scripts/Services/serviceContext.js"></script>
+    <script src="Scripts/Controllers/studentCardController.js"></script>
+    <script src="Scripts/Controllers/studentsController.js"></script>
     <script src="Scripts/menuController.js"></script>
     <script src="Scripts/appController.js"></script>
 </head>
@@ -36,9 +40,11 @@
                 <h2>Home</h2>
                 <p>This is the Home Page.</p>
             </div>
-            <div id="divStudentsContainer" style="display:none">
+            <div id="divStudentsContainer" class="container" style="display:none">
                 <h2>Students</h2>
                 <p>This is the Students Page.</p>
+                <div id="divStudentCards" class="row">
+                </div>
             </div>
             <div id="divCoursesContainer" style="display:none">
                 <h2>Courses</h2>

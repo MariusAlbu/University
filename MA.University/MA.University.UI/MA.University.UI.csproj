@@ -67,6 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\Controllers\studentCardController.js" />
+    <Content Include="Scripts\Controllers\studentsController.js" />
+    <Content Include="Scripts\Services\serviceContext.js" />
+    <Content Include="Scripts\Services\studentService.js" />
     <Content Include="Style\bootstrap.css.map" />
     <Content Include="Style\bootstrap.min.css.map" />
     <Content Include="Scripts\External\bootstrap.bundle.js.map" />
@@ -80,18 +84,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\favicon.ico" />
-    <Content Include="Example1.html" />
-    <Content Include="Example2.html" />
-    <Content Include="Example3.html" />
+    <Content Include="Examples\Example1.html" />
+    <Content Include="Examples\Example2.html" />
+    <Content Include="Examples\Example3.html" />
     <Content Include="index.html" />
     <Content Include="Scripts\appController.js" />
-    <Content Include="Scripts\Example2\app.js" />
+    <Content Include="Examples\Example2\app.js" />
     <Content Include="Scripts\External\bootstrap.bundle.js" />
     <Content Include="Scripts\External\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\Example2\eventsController.js" />
-    <Content Include="Scripts\Example2\eventsService.js" />
+    <Content Include="Examples\Example2\eventsController.js" />
+    <Content Include="Examples\Example2\eventsService.js" />
     <Content Include="Scripts\External\jquery-3.2.1.min.js" />
-    <Content Include="Scripts\Example2\otherScript.js" />
+    <Content Include="Examples\Example2\otherScript.js" />
     <Content Include="Scripts\menuController.js" />
     <Content Include="Style\bootstrap.css" />
     <Content Include="Style\bootstrap.min.css" />
