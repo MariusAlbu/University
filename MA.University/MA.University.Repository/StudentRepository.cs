@@ -3,6 +3,7 @@ using MA.University.Repository.Core;
 using MA.University.RepositoryAbstraction;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Data.SqlClient;
 
 namespace MA.University.Repository
@@ -12,9 +13,14 @@ namespace MA.University.Repository
         #region Methods
         public List<Student> ReadAll()
         {
-            return DatabaseManager.ReadAll<Student>(_connectionString, "dbo.Students_ReadAll",
+            return DatabaseManager.ReadAll(_connectionString, "dbo.Students_ReadAll",
                 GetModelFromReader);
-            //return ReadAll("dbo.Students_ReadAll");
+        }
+
+        public Student ReadById(Guid studentId)
+        {
+            SqlParameter studentIdParameter = new SqlParameter("@StudentID", studentId);
+            return DatabaseManager.ReadAll(_connectionString, "dbo.Students_ReadById", GetModelFromReader, new SqlParameter[] { studentIdParameter}).FirstOrDefault();
         }
 
         public void Insert(Student student)
